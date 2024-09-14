@@ -792,6 +792,10 @@ video {
   background-image: url('/img/bg-tablet-pattern.svg');
 }
 
+.bg-\[url\(\'\.\.\/img\/bg-tablet-pattern\.svg\'\)\] {
+  background-image: url('../img/bg-tablet-pattern.svg');
+}
+
 .bg-auto {
   background-size: auto;
 }
