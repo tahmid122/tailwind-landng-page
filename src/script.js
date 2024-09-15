@@ -5,7 +5,9 @@ let isTrue = false;
 const handleClick = () => {
   isTrue = !isTrue;
   handleNav(isTrue);
-  hamberGer.src = isTrue ? "/img/icon-close.svg" : "/img/icon-hamburger.svg";
+  hamberGer.src = isTrue
+    ? hamberGer.classList.replace("fa-bars", "fa-xmark")
+    : hamberGer.classList.replace("fa-xmark", "fa-bars");
 };
 
 const handleNav = (isTrue) => {
